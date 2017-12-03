@@ -30,6 +30,12 @@ Branch can track universal links from domains you associate with your app. **Not
 
 - Add an associated domain to support universal links to your `app.json` in the `ios.associatedDomains` section. This should be in the form of `applinks:<link-domain>` where `link-domain` can be found in the Link Domain section of the [Link Settings](https://dashboard.branch.io/link-settings) page on the Branch Dashboard.
 
+## Example
+
+```javascript
+  "associatedDomains": ["www.mydomain.com"]
+```
+
 ## Using the Branch API
 
 We pull in the API from [react-native-branch](https://github.com/BranchMetrics/react-native-branch-deep-linking#usage), so the documentation there is the best resource to follow. Make sure you import Branch using the above instructions (from `Expo.DangerZone.Branch`).
